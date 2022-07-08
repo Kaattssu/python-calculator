@@ -21,20 +21,21 @@ while True:
 		2- Subtract
 		3- Multiply
 		4- Split \n"""))
+		if op == '1':
+			sumar()
+			break
+		elif op == '2':
+			restar()
+			break
+		elif op == '3':
+			multiplicar()
+			break
+		elif op == '4':
+			dividir()
+			break
+		else:
+			print ("That's a wrong number!")
 	except:
 		print("Error")
 		op = '?'
-	if op == '1':
-		sumar()
-		break
-	elif op == '2':
-		restar()
-		break
-	elif op == '3':
-		multiplicar()
-		break
-	elif op == '4':
-		dividir()
-		break
-	else:
-		print ("That's a wrong number!")
+
