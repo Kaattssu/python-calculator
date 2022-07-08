@@ -1,26 +1,26 @@
 def sumar():
 	x = a + b
-	print (("Resultado:"), (x))
+	print (("Result:"), (x))
 def restar():
 	x = a - b
-	print (("Resultado:"), (x))
+	print (("Result:"), (x))
 def multiplicar():
 	x = a * b
-	print (("Resultado:"), (x))
+	print (("Result:"), (x))
 def dividir():
 	x = a / b
-	print (("Resultado:"), (x))
+	print (("Result:"), (x))
 
 while True:
 	try:
-		a = int(input("Ingresa el primer numero: \n"))
-		b = int(input("Ingresa el segundo numero: \n"))
-		print (("Que calculo quieres realizar entre"), (a), ("y"), (b), ("?\n"))
+		a = int(input("Enter the first number: \n"))
+		b = int(input("Enter the second number: \n"))
+		print (("What calc do you want to do?"), (a), ("y"), (b), ("?\n"))
 		op = str(input("""
-		1- sumar
-		2- restar
-		3- multiplicar
-		4- dividir \n"""))
+		1- Add
+		2- Subtract
+		3- Multiply
+		4- Split \n"""))
 	except:
 		print("Error")
 		op = '?'
@@ -37,4 +37,4 @@ while True:
 		dividir()
 		break
 	else:
-		print ("¡Has ingresado un numero incorrecto!")
+		print ("That's a wrong number!")
